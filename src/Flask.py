@@ -17,7 +17,7 @@ mysql = MySQL(app)
 
 def main():
 
-    return render_template('user details.html')
+    return render_template('index.html')
 
  
 
