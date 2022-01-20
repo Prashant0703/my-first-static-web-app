@@ -1,0 +1,31 @@
+{
+	"name": "datasetoutput1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "testcontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Order_channel_code",
+				"type": "String"
+			},
+			{
+				"name": "Order_channel_type",
+				"type": "String"
+			}
+		]
+	}
+}
