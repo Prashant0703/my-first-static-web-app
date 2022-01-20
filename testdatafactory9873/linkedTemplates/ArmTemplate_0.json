@@ -96,6 +96,8 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
+						"fileName": "outputfile1.csv",
+						"folderPath": "output",
 						"fileSystem": "testcontainer"
 					},
 					"columnDelimiter": ",",
